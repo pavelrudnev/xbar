@@ -1,8 +1,9 @@
 project:
   type: website
+  output-dir: docs
 
 website:
-  title: "constituent-structure"
+  title: "formal-representation-of-natural-language-introduction"
   navbar:
     left:
       - href: index.qmd
