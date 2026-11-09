@@ -325,6 +325,185 @@
       margin-right: 0; 
     }
   </style>
+  <link rel="stylesheet" href="//unpkg.com/leipzig/dist/leipzig.min.css">
+  <style>
+  /* Import Bootstrap's CSS grid system */
+  .grid {
+      display: grid;
+      grid-template-rows: repeat(var(--bs-rows, 1), 1fr);
+      grid-template-columns: repeat(var(--bs-columns, 12), 1fr);
+      gap: var(--bs-gap, 1.5rem);
+    }
+    
+    /* Column spans */
+    .grid .g-col-1 { grid-column: auto/span 1; }
+    .grid .g-col-2 { grid-column: auto/span 2; }
+    .grid .g-col-3 { grid-column: auto/span 3; }
+    .grid .g-col-4 { grid-column: auto/span 4; }
+    .grid .g-col-5 { grid-column: auto/span 5; }
+    .grid .g-col-6 { grid-column: auto/span 6; }
+    .grid .g-col-7 { grid-column: auto/span 7; }
+    .grid .g-col-8 { grid-column: auto/span 8; }
+    .grid .g-col-9 { grid-column: auto/span 9; }
+    .grid .g-col-10 { grid-column: auto/span 10; }
+    .grid .g-col-11 { grid-column: auto/span 11; }
+    .grid .g-col-12 { grid-column: auto/span 12; }
+    
+    /* Column starts */
+    .grid .g-start-1 { grid-column-start: 1; }
+    .grid .g-start-2 { grid-column-start: 2; }
+    .grid .g-start-3 { grid-column-start: 3; }
+    .grid .g-start-4 { grid-column-start: 4; }
+    .grid .g-start-5 { grid-column-start: 5; }
+    .grid .g-start-6 { grid-column-start: 6; }
+    .grid .g-start-7 { grid-column-start: 7; }
+    .grid .g-start-8 { grid-column-start: 8; }
+    .grid .g-start-9 { grid-column-start: 9; }
+    .grid .g-start-10 { grid-column-start: 10; }
+    .grid .g-start-11 { grid-column-start: 11; }
+    
+    /* Responsive breakpoints: sm */
+    @media (min-width: 576px) {
+      .grid .g-col-sm-1 { grid-column: auto/span 1; }
+      .grid .g-col-sm-2 { grid-column: auto/span 2; }
+      .grid .g-col-sm-3 { grid-column: auto/span 3; }
+      .grid .g-col-sm-4 { grid-column: auto/span 4; }
+      .grid .g-col-sm-5 { grid-column: auto/span 5; }
+      .grid .g-col-sm-6 { grid-column: auto/span 6; }
+      .grid .g-col-sm-7 { grid-column: auto/span 7; }
+      .grid .g-col-sm-8 { grid-column: auto/span 8; }
+      .grid .g-col-sm-9 { grid-column: auto/span 9; }
+      .grid .g-col-sm-10 { grid-column: auto/span 10; }
+      .grid .g-col-sm-11 { grid-column: auto/span 11; }
+      .grid .g-col-sm-12 { grid-column: auto/span 12; }
+      .grid .g-start-sm-1 { grid-column-start: 1; }
+      .grid .g-start-sm-2 { grid-column-start: 2; }
+      .grid .g-start-sm-3 { grid-column-start: 3; }
+      .grid .g-start-sm-4 { grid-column-start: 4; }
+      .grid .g-start-sm-5 { grid-column-start: 5; }
+      .grid .g-start-sm-6 { grid-column-start: 6; }
+      .grid .g-start-sm-7 { grid-column-start: 7; }
+      .grid .g-start-sm-8 { grid-column-start: 8; }
+      .grid .g-start-sm-9 { grid-column-start: 9; }
+      .grid .g-start-sm-10 { grid-column-start: 10; }
+      .grid .g-start-sm-11 { grid-column-start: 11; }
+    }
+    
+    /* md */
+    @media (min-width: 768px) {
+      .grid .g-col-md-1 { grid-column: auto/span 1; }
+      .grid .g-col-md-2 { grid-column: auto/span 2; }
+      .grid .g-col-md-3 { grid-column: auto/span 3; }
+      .grid .g-col-md-4 { grid-column: auto/span 4; }
+      .grid .g-col-md-5 { grid-column: auto/span 5; }
+      .grid .g-col-md-6 { grid-column: auto/span 6; }
+      .grid .g-col-md-7 { grid-column: auto/span 7; }
+      .grid .g-col-md-8 { grid-column: auto/span 8; }
+      .grid .g-col-md-9 { grid-column: auto/span 9; }
+      .grid .g-col-md-10 { grid-column: auto/span 10; }
+      .grid .g-col-md-11 { grid-column: auto/span 11; }
+      .grid .g-col-md-12 { grid-column: auto/span 12; }
+      .grid .g-start-md-1 { grid-column-start: 1; }
+      .grid .g-start-md-2 { grid-column-start: 2; }
+      .grid .g-start-md-3 { grid-column-start: 3; }
+      .grid .g-start-md-4 { grid-column-start: 4; }
+      .grid .g-start-md-5 { grid-column-start: 5; }
+      .grid .g-start-md-6 { grid-column-start: 6; }
+      .grid .g-start-md-7 { grid-column-start: 7; }
+      .grid .g-start-md-8 { grid-column-start: 8; }
+      .grid .g-start-md-9 { grid-column-start: 9; }
+      .grid .g-start-md-10 { grid-column-start: 10; }
+      .grid .g-start-md-11 { grid-column-start: 11; }
+    }
+    
+    /* lg */
+    @media (min-width: 992px) {
+      .grid .g-col-lg-1 { grid-column: auto/span 1; }
+      .grid .g-col-lg-2 { grid-column: auto/span 2; }
+      .grid .g-col-lg-3 { grid-column: auto/span 3; }
+      .grid .g-col-lg-4 { grid-column: auto/span 4; }
+      .grid .g-col-lg-5 { grid-column: auto/span 5; }
+      .grid .g-col-lg-6 { grid-column: auto/span 6; }
+      .grid .g-col-lg-7 { grid-column: auto/span 7; }
+      .grid .g-col-lg-8 { grid-column: auto/span 8; }
+      .grid .g-col-lg-9 { grid-column: auto/span 9; }
+      .grid .g-col-lg-10 { grid-column: auto/span 10; }
+      .grid .g-col-lg-11 { grid-column: auto/span 11; }
+      .grid .g-col-lg-12 { grid-column: auto/span 12; }
+      .grid .g-start-lg-1 { grid-column-start: 1; }
+      .grid .g-start-lg-2 { grid-column-start: 2; }
+      .grid .g-start-lg-3 { grid-column-start: 3; }
+      .grid .g-start-lg-4 { grid-column-start: 4; }
+      .grid .g-start-lg-5 { grid-column-start: 5; }
+      .grid .g-start-lg-6 { grid-column-start: 6; }
+      .grid .g-start-lg-7 { grid-column-start: 7; }
+      .grid .g-start-lg-8 { grid-column-start: 8; }
+      .grid .g-start-lg-9 { grid-column-start: 9; }
+      .grid .g-start-lg-10 { grid-column-start: 10; }
+      .grid .g-start-lg-11 { grid-column-start: 11; }
+    }
+    
+    /* xl */
+    @media (min-width: 1200px) {
+      .grid .g-col-xl-1 { grid-column: auto/span 1; }
+      .grid .g-col-xl-2 { grid-column: auto/span 2; }
+      .grid .g-col-xl-3 { grid-column: auto/span 3; }
+      .grid .g-col-xl-4 { grid-column: auto/span 4; }
+      .grid .g-col-xl-5 { grid-column: auto/span 5; }
+      .grid .g-col-xl-6 { grid-column: auto/span 6; }
+      .grid .g-col-xl-7 { grid-column: auto/span 7; }
+      .grid .g-col-xl-8 { grid-column: auto/span 8; }
+      .grid .g-col-xl-9 { grid-column: auto/span 9; }
+      .grid .g-col-xl-10 { grid-column: auto/span 10; }
+      .grid .g-col-xl-11 { grid-column: auto/span 11; }
+      .grid .g-col-xl-12 { grid-column: auto/span 12; }
+      .grid .g-start-xl-1 { grid-column-start: 1; }
+      .grid .g-start-xl-2 { grid-column-start: 2; }
+      .grid .g-start-xl-3 { grid-column-start: 3; }
+      .grid .g-start-xl-4 { grid-column-start: 4; }
+      .grid .g-start-xl-5 { grid-column-start: 5; }
+      .grid .g-start-xl-6 { grid-column-start: 6; }
+      .grid .g-start-xl-7 { grid-column-start: 7; }
+      .grid .g-start-xl-8 { grid-column-start: 8; }
+      .grid .g-start-xl-9 { grid-column-start: 9; }
+      .grid .g-start-xl-10 { grid-column-start: 10; }
+      .grid .g-start-xl-11 { grid-column-start: 11; }
+    }
+    
+    /* xxl */
+    @media (min-width: 1400px) {
+      .grid .g-col-xxl-1 { grid-column: auto/span 1; }
+      .grid .g-col-xxl-2 { grid-column: auto/span 2; }
+      .grid .g-col-xxl-3 { grid-column: auto/span 3; }
+      .grid .g-col-xxl-4 { grid-column: auto/span 4; }
+      .grid .g-col-xxl-5 { grid-column: auto/span 5; }
+      .grid .g-col-xxl-6 { grid-column: auto/span 6; }
+      .grid .g-col-xxl-7 { grid-column: auto/span 7; }
+      .grid .g-col-xxl-8 { grid-column: auto/span 8; }
+      .grid .g-col-xxl-9 { grid-column: auto/span 9; }
+      .grid .g-col-xxl-10 { grid-column: auto/span 10; }
+      .grid .g-col-xxl-11 { grid-column: auto/span 11; }
+      .grid .g-col-xxl-12 { grid-column: auto/span 12; }
+      .grid .g-start-xxl-1 { grid-column-start: 1; }
+      .grid .g-start-xxl-2 { grid-column-start: 2; }
+      .grid .g-start-xxl-3 { grid-column-start: 3; }
+      .grid .g-start-xxl-4 { grid-column-start: 4; }
+      .grid .g-start-xxl-5 { grid-column-start: 5; }
+      .grid .g-start-xxl-6 { grid-column-start: 6; }
+      .grid .g-start-xxl-7 { grid-column-start: 7; }
+      .grid .g-start-xxl-8 { grid-column-start: 8; }
+      .grid .g-start-xxl-9 { grid-column-start: 9; }
+      .grid .g-start-xxl-10 { grid-column-start: 10; }
+      .grid .g-start-xxl-11 { grid-column-start: 11; }
+    }  
+
+  /* Deactivate p margin from revealjs css */
+  .reveal .ex p {
+    margin: 0 !important;
+  }
+
+  </style>
+          
 </head>
 <body class="quarto-light">
   <div class="reveal">
@@ -599,6 +778,23 @@
 <p>→ иной, <strong>функциональный</strong>, элемент</p>
 <p>(кроме того, если немного выглянуть за пределы русского языка, мы увидим, что и самые обычные словосочетания проявляют типы синтаксической связи, характерные для предложения)</p>
 </section>
+<section id="двунаправленная-синтаксическая-связь" class="slide level2">
+<h2>Двунаправленная синтаксическая связь</h2>
+<h3 id="предложение">Предложение</h3>
+<ul>
+<li>падеж подлежащего определяется глаголом</li>
+<li>форма глагола определяется свойствами подлежащего</li>
+</ul>
+<div class="fragment">
+<!-- -->
+<h3 id="словосочетание">Словосочетание</h3>
+<div class="gl">
+<p>mon’ kud-əz’ə<br>
+я.GEN дом-POSS.1SG<br>
+‘мой дом’</p>
+</div>
+</div>
+</section>
 <section id="предложение-как-составляющая" class="slide level2">
 <h2>Предложение как составляющая</h2>
 <p>Если предположить, что предложение – это составляющая, то это должно быть видно при применении стандартных тестов.</p>
@@ -650,18 +846,18 @@
 </ul>
 <p>Это неожиданно, если <em>будет</em> образует составляющую с <em>печь</em>, не включающую в себя дополнение.</p>
 </section>
-<section id="зачем-x" class="slide level2">
-<h2>Зачем X′?</h2>
+<section id="зачем-x-комплементы-и-адъюнкты" class="slide level2">
+<h2>Зачем X′? Комплементы и адъюнкты</h2>
 <h3 id="do-so-substitution"><em>do so</em> substitution</h3>
 <p>Вспомним о существовании в английском языке специальной глагольной проформы <em>do so</em>.</p>
 <ul>
-<li><em>The children ate the pizza.</em></li>
-<li><em>Their parents did so too.</em>
+<li><em>The children will <span class="fragment highlight-red">eat the pizza</span>.</em></li>
+<li><em>Their parents will <span class="fragment highlight-red">do so</span> too.</em>
 <ul>
 <li>проформа <em>do so</em> заменяет цепочку V + NP</li>
 <li>и не заменяет просто глагол:
 <ul>
-<li>*<em>Their parents did so the pizza.</em></li>
+<li>*<em>Their parents will <span class="fragment highlight-red">do so</span> the pizza.</em></li>
 </ul></li>
 </ul></li>
 </ul>
@@ -1095,7 +1291,19 @@
       }
     });
     </script>
-    <script>var lightboxQuarto = GLightbox({"openEffect":"zoom","descPosition":"bottom","closeEffect":"zoom","loop":false,"selector":".lightbox"});
+    <script src="//unpkg.com/leipzig/dist/leipzig.min.js"></script>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        Leipzig().gloss();
+    });
+    </script>
+    <style>
+    .gloss__words:first-child, .gloss--glossed li:first-child {
+            margin-top: 0em !important
+    }
+    </style>
+        
+    <script>var lightboxQuarto = GLightbox({"selector":".lightbox","descPosition":"bottom","openEffect":"zoom","loop":false,"closeEffect":"zoom"});
     (function() {
       let previousOnload = window.onload;
       window.onload = () => {

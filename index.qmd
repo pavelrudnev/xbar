@@ -11,6 +11,8 @@ format:
     theme: [default, custom.scss]
     chalkboard: true
     slide-number: true
+filters: 
+  - interlinear
 slide-level: 2
 bibliography: ../teaching.bib
 lang: ru
@@ -239,6 +241,25 @@ rights: CC-by
 
 (кроме того, если немного выглянуть за пределы русского языка, мы увидим, что и самые обычные словосочетания проявляют типы синтаксической связи, характерные для предложения)
 
+## Двунаправленная синтаксическая связь 
+
+### Предложение
+
+- падеж подлежащего определяется глаголом
+- форма глагола определяется свойствами подлежащего
+
+::: {.fragment}
+
+### Словосочетание
+
+::: {.gl}
+mon’ kud-əz’ə\
+я.GEN дом-POSS.1SG\
+‘мой дом’
+:::
+
+:::
+
 ## Предложение как составляющая ##
 
 Если предположить, что предложение -- это составляющая, то это должно быть видно при применении стандартных тестов.
@@ -295,17 +316,17 @@ rights: CC-by
 
 Это неожиданно, если *будет* образует составляющую с *печь*, не включающую в себя дополнение.
 
-## Зачем X′? ##
+## Зачем X′? Комплементы и адъюнкты ##
 
 ### *do so* substitution ###
 
 Вспомним о существовании в английском языке специальной глагольной проформы *do so*.
 
-  * *The children ate the pizza.*
-  * *Their parents did so too.*
+  * *The children will [eat the pizza]{.fragment .highlight-red}.*
+  * *Their parents will [do so]{.fragment .highlight-red} too.*
       * проформа *do so* заменяет цепочку V + NP
       * и не заменяет просто глагол:
-          * \**Their parents did so the pizza.*
+          * \**Their parents will [do so]{.fragment .highlight-red} the pizza.*
 
 V + NP — это и есть V′.
 

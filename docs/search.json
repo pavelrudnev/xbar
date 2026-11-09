@@ -173,5 +173,19 @@
     "title": "Формальное представление естественного языка",
     "section": "a student of physics from Cambridge",
     "text": "a student of physics from Cambridge\nНесколько фактов\nВажно взаимное расположение зависимых\n\na student of physics from Cambridge\n*a student from Cambridge of physics\n\nВажна заменяемость проформой one\n\na student of physics from Cambridge and another one from Oxford\n*a student of physics from Cambridge and another one of chemistry from Oxford"
+  },
+  {
+    "objectID": "index.html#зачем-x-комплементы-и-адъюнкты",
+    "href": "index.html#зачем-x-комплементы-и-адъюнкты",
+    "title": "Формальное представление естественного языка",
+    "section": "Зачем X′? Комплементы и адъюнкты",
+    "text": "Зачем X′? Комплементы и адъюнкты\ndo so substitution\nВспомним о существовании в английском языке специальной глагольной проформы do so.\n\nThe children will eat the pizza.\nTheir parents will do so too.\n\nпроформа do so заменяет цепочку V + NP\nи не заменяет просто глагол:\n\n*Their parents will do so the pizza.\n\n\n\nV + NP — это и есть V′."
+  },
+  {
+    "objectID": "index.html#двунаправленная-синтаксическая-связь",
+    "href": "index.html#двунаправленная-синтаксическая-связь",
+    "title": "Формальное представление естественного языка",
+    "section": "Двунаправленная синтаксическая связь",
+    "text": "Двунаправленная синтаксическая связь\nПредложение\n\nпадеж подлежащего определяется глаголом\nформа глагола определяется свойствами подлежащего\n\n\n\nСловосочетание\n\nmon’ kud-əz’ə\nя.GEN дом-POSS.1SG\n‘мой дом’"
   }
 ]
