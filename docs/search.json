@@ -186,6 +186,41 @@
     "href": "index.html#двунаправленная-синтаксическая-связь",
     "title": "Формальное представление естественного языка",
     "section": "Двунаправленная синтаксическая связь",
-    "text": "Двунаправленная синтаксическая связь\nПредложение\n\nпадеж подлежащего определяется глаголом\nформа глагола определяется свойствами подлежащего\n\n\n\nСловосочетание\n\nmon’ kud-əz’ə\nя.GEN дом-POSS.1SG\n‘мой дом’"
+    "text": "Двунаправленная синтаксическая связь\nПредложение\n\nпадеж подлежащего определяется глаголом\nформа глагола определяется свойствами подлежащего\n\nСловосочетание\n\nМокшанская именная группаМокшанская глагольная группа\n\n\nГлавное слово согласуется с зависимым по лицу и числу; зависимое получает от главного падеж:\n\n(1) \n\nмонь куд-озе\nя.GEN дом-POSS.1SG\n‘мой дом’\n\n\n\n\n(2) \n\nатя-ть куд-оц\nотец-DEF.GEN дом-POSS.3SG\n‘дом отца’\n\n\n\n\n(3) \n\nатя-тьне-нь куд-осна\nотец-DEF.PL-GEN дом-POSS.3PL\n‘дом отцов’\n\n\n\nНеужели каждая мокшанская именная группа, выражающая притяжательность, является предложением и качественно отличается от именных групп без притяжательности?\n\n\nПереходный глагол согласуется по по лицу и числу в том числе с прямым дополнением, а дополнение получает от глагола падеж:\n\n(4) \n\nмон лув-са книга-ть\nя читать-1SG.S.3S.O книга-DEF.GEN\n‘Я прочитаю книгу.’\n\n\n\n\n(5) \n\nмон лув-сайне книга-тьне-нь\nя читать-1SG.S.3S.O книга-DEF.GEN-PL\n‘Я прочитаю книги.’\n\n\n\nНеужели глагол + дополнение — это тот же тип синтаксической единицы, что и финитное предложение? Разумеется, нет."
+  },
+  {
+    "objectID": "Untitled.html",
+    "href": "Untitled.html",
+    "title": "interlinear examples",
+    "section": "",
+    "text": "The Quarto filter interlinear enables users to write numbered linguistic examples. The filter can also render interlinear glosses. A custom implementation for example numbering has been developed for the HTML output, while in LaTeX it is handled by expex. Interlinear glossing is handled by Leipzig.js in HTML and expex in LaTeX."
+  },
+  {
+    "objectID": "Untitled.html#numbered-examples",
+    "href": "Untitled.html#numbered-examples",
+    "title": "interlinear examples",
+    "section": "Numbered examples",
+    "text": "Numbered examples\nTo create a numbered example, use a fenced Div block (:::) with class ex. For example the following code results in Example (1).\n::: ex\nYou do the job. You are not the job.\n:::\n\n(1) \nYou do the job. You are not the job."
+  },
+  {
+    "objectID": "Untitled.html#subexamples",
+    "href": "Untitled.html#subexamples",
+    "title": "interlinear examples",
+    "section": "Subexamples",
+    "text": "Subexamples\nYou can create subexamples within an ex Div block with a fenced Div block with class exi (for “example item”) for each subexample.\n::: ex\n::: exi\nA bird sings a beautiful song.\n:::\n\n::: exi\nA fish swims in the pool.\n:::\n:::\nWhich renders as:\n\n(2) \n\na. \nA bird sings a beautiful song.\n\n\n\nb. \nA fish swims in the pool."
+  },
+  {
+    "objectID": "Untitled.html#interlinear-glosses",
+    "href": "Untitled.html#interlinear-glosses",
+    "title": "interlinear examples",
+    "section": "Interlinear glosses",
+    "text": "Interlinear glosses\nTo create an interlinear gloss, use a fenced Div block (:::) with class gl (usually, within an ex Div). These are the current rules:\n\nEach line of the interlinear gloss should start with |.\nInterlinear lines that start with | - are treated as preambles/original text (i.e. they are not aligned).\nThe last interlinear line is treated as the free translation."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site\n\n1 + 1\n\n[1] 2"
   }
 ]
